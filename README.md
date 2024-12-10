@@ -1,4 +1,4 @@
-# LangGraph Software Engineering Agent
+# Boilerplate Software Engineering Agent
 
 A powerful Software Engineering Agent that assists in the complete software development lifecycle - from requirements analysis to code generation and documentation.
 
