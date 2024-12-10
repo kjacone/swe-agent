@@ -39,13 +39,7 @@ The project consists of four main graphs:
 - Generates and refactors code
 - Reviews implementations
 
-## Getting Started
 
-### Prerequisites
-- [LangGraph Studio](https://github.com/langchain-ai/langgraph-studio) installed
-- Python 3.8 or higher
-- Git
-- Jupyter Notebook (for running examples)
 
 ### Installation
 
@@ -70,63 +64,8 @@ pip install -r requirements.txt
 
 ### Running in Jupyter Notebook
 
-You can run the agent directly in a Jupyter notebook (`test.ipynb`). Here's an example:
+You can run the agent directly in a Jupyter notebook (`test.ipynb`). 
 
-```python
-# Import necessary components
-from langchain.schema import HumanMessage
-from src.analyzer_graph import analyzer_graph
-
-# Initialize the graph
-app = analyzer_graph
-
-# Configure the run
-config = {
-    "thread_id": "1",
-    "checkpoint_ns": "test_namespace",
-    "checkpoint_id": "1",
-}
-
-# Define input
-inputs = {"messages": [HumanMessage(content="build ecommerce site")]}
-
-# Run the graph
-await app.ainvoke(inputs, config=config)
-```
-
-### Using Python API
-
-#### 1. Requirements Analysis
-```python
-from src.analyzer_graph import analyze_requirements
-
-requirements = """
-Your project requirements in natural language
-"""
-analysis = analyze_requirements(requirements)
-```
-
-#### 2. Project Setup
-```python
-from src.codebase_graph import setup_project
-
-project_config = {
-    "name": "your-project",
-    "structure": analysis.recommended_structure
-}
-setup_project(project_config)
-```
-
-#### 3. Development
-```python
-from src.development_graph import process_task
-
-task = {
-    "type": "feature",
-    "description": "Implement user authentication"
-}
-result = process_task(task)
-```
 
 ## Customization
 
