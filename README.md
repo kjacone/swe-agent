@@ -1,6 +1,6 @@
 # LangGraph Software Engineering Agent
 
-A powerful Software Engineering Agent built using [LangGraph](https://github.com/langchain-ai/langgraph) that assists in the complete software development lifecycle - from requirements analysis to code generation and documentation.
+A powerful Software Engineering Agent that assists in the complete software development lifecycle - from requirements analysis to code generation and documentation.
 
 ## System Architecture
 
