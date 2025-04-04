@@ -1,13 +1,12 @@
 {
-  "dependencies": ["."],
+  "dockerfile_lines": [],
   "graphs": {
-    "indexer": "./src/index_graph/graph.py:graph",
-    "researcher": "./src/swe_graph/researcher_graph/graph.py:graph",
-    "gather_requirements": "./src/swe_graph/analyser_sub_graph/graph.py:graph",
-    "monorepo": "./src/swe_graph/monorepo_sub_graph/graph.py:graph",
-    "development": "./src/swe_graph/development_sub_graph/graph.py:graph",
-    "review_and_documentation": "./src/swe_graph/review_and_documentation_sub_graph/graph.py:graph",
-    "swe_parent_agent": "./src/swe_graph/graph.py:graph"
+   
+    "agent":"./graph.py:graph"
   },
-  "env": ".env"
+  "env": ".env",
+  "python_version": "3.12",
+  "dependencies": [
+    "."
+  ]
 }

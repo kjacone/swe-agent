@@ -53,7 +53,7 @@ The workflow consists of multiple interconnected nodes that perform specific tas
 ## Architectural Diagram
 The following diagram illustrates the entire workflow:
 
-![Architectural Diagram](./static/architecture.png)
+![Architectural Diagram](../swe/static/architecture.png)
 
 ## Conclusion
 This architecture follows a structured approach to AI-driven code generation with built-in human oversight (HITL). It allows for efficient, modular code generation while maintaining flexibility and user control. The error handling and retry mechanism ensure robustness, while Docker-based execution guarantees environment consistency. This system can be further enhanced by integrating AI-powered debugging and automated testing.
